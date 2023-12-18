@@ -55,8 +55,7 @@ const columnDefs = ref([
     field: 'id'
   },
   {
-    field: 'count',
-    cellRenderer: 'medalCellRenderer'
+    field: 'count'
   },
   {
     headerName: 'Odd Or Even',
@@ -67,8 +66,7 @@ const columnDefs = ref([
 const defaultColDef = ref({
   initialWidth: 90,
   sortable: false,
-  resizable: true,
-  cellFadeDelay: 5000
+  resizable: true
 })
 const gridOptions = ref({
   rowSelection: 'multiple',
