@@ -48,6 +48,9 @@ const increaseCount = () => {
     newData.push({ id: element.id, count: element.count + 1 })
   })
   rowData.value = newData
+  setTimeout(() => {
+    gridApi.value.refreshCells({ force: true })
+  }, 1)
 }
 const columnDefs = ref([
   {
